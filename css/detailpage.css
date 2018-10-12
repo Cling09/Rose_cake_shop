@@ -1,0 +1,1151 @@
+*{       		
+        		margin:0px;
+        		padding:0px;
+        		list-style:none;
+        	}
+        	html{
+				background: #f6f6f6;
+			}
+			body{
+				min-width: 1200px;
+			}
+        	/*header部分*/
+        	.icon {
+				width: 1em;
+				height: 1em;
+				vertical-align: -0.15em;
+				fill: currentColor;
+				overflow: hidden;
+			}
+			
+			header {
+				width: 100%;
+				height: 100px;
+				
+			}
+			
+			header h1 {
+				/*width: 528px;*/
+				/*height: 100px;*/
+				width: 257px;
+				height: 52px;
+				/*text-align: center;*/
+				float: left;
+				margin: 15px 144px 22px 69px;
+			}
+			
+			.sel {
+				float: left;
+				width: 560px;
+			}
+			
+	
+			
+			.select {
+				border: 1px solid #dddddd;
+				width: 439px;
+				height: 40px;
+				margin-top: 27px;
+			}
+			
+			.select input {
+				border: none;
+				width: 364px;
+				height: 40px;
+			}
+			
+			.select span {
+				position: absolute;
+				display: inline-block;
+				width: 75px;
+				height: 40px;
+				text-align: center;
+				background: #2b2b2b;
+				cursor: pointer;
+			}
+			
+			.sel svg {
+				margin-top: 12px;
+			}
+			
+			.eg {
+				margin-left: 3px;
+			}
+			
+			.eg span {
+				font-size: 12px;
+				margin-right: 10px;
+				margin-top: 6px;
+				color: #666666;
+				cursor: pointer;
+			}
+			
+			.shopcar {
+				float: left;
+				border: 1px solid #e6e6e6;
+				width: 156px;
+				height: 44px;
+				line-height: 32px;
+				margin-top: 24px;
+				cursor: pointer;
+				
+			}
+			
+			.shopcar label {
+				color: #919191;
+				font-size: 11px;
+				margin-right: 14px;
+			}
+			
+			.icon-shopcar {
+				color: #434343;
+				margin-left: 9px;
+				margin-right: 23px;
+			}
+			
+			.icon-xiala {
+				color: #929292;
+			}
+			/*.shopcar-out1{
+				position: relative;
+				border:  1px solid black;
+				
+			}*/
+			.shopcar-hidden {
+				position: relative;
+				width: 302px;
+				height: 142px;
+				color: #b2b2b2;
+			margin-top:7px ;
+			margin-right: 2000px;
+				/*vertical-align: middle;*/
+				border: 1px solid #e6e6e6;
+				display: none;
+				background: #fff;
+				z-index: 2;
+			}
+			
+			.shopcar-hidden svg {
+				
+				width: 58px;
+				height: 53px;
+				margin-right: 28px;
+				margin-top: 43px;
+				vertical-align: middle;
+			}
+			
+			.scdes {
+				position: absolute;
+				font-size: 11px;
+				line-height: 17px;
+				margin-top: 62px;
+				width: 132px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			
+			/*导航栏部分*/
+			nav{
+				width: 100%;
+				background: #2d2d2d;
+				height: 50px;
+			}
+			nav ul{
+				padding-left: 75px;
+				height: 50px;
+			}
+			nav li{
+				float: left;
+				color: #ffffff;
+				font-size: 16px;
+				width: 120px;
+				height: 20px;
+				text-align: center;
+				/*line-height: 34px;*/
+				/*padding-top: 15px;
+				padding-bottom: 15px;*/
+				padding: 15px 0;
+				margin-right: 12px;
+				cursor: pointer;
+			}
+			nav .current{
+				background: #33c0e0;
+			}
+			
+/*section部分*/
+/*商品信息介绍*/
+section {
+	width: 1050px;
+	
+	margin: 90px auto 40px auto;
+}
+section .maingoods::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+section .maingoods .mgleft{
+	width: 400px;
+	height: 400px;
+	border: 1px solid #eeeeee;
+	margin-right: 130px;
+	float: left;
+}
+section .maingoods .mgleft img{
+	width: 400px;
+	height: 294px;
+	margin-top: 52px;
+	margin-bottom: 52px;
+}
+section .maingoods .mgright{
+	width: 388px;
+	margin-right: 130px;
+	float: right;
+	font-size: 12px;
+	color: #666666;
+}
+section .mgright .mggoodsname{
+	font-size: 20px;
+	color: #585858;
+}
+section .mgright .mggoodsname svg{
+	font-size: 18px;
+}
+section .mgright .mgpricesym{
+	color: #ff6537;
+	font-size: 20px;
+	/*vertical-align: middle;*/
+	height: 98px;
+	line-height: 98px;
+}
+section .mgright .detprice{
+	font-size: 29px;
+	/*vertical-align: middle;*/
+	
+}
+section .mgright .mgprice{
+	/*vertical-align: middle;*/
+	/*display: inline;*/
+	margin-left: 30px;
+}
+section .mgright .mgcondition{
+	margin-left: 30px;
+	height: 70px;
+	line-height: 70px;
+}
+section .mgright .mgcondition>span{
+	margin-right: 33px;
+	text-align: left;
+}
+section .mgcondition span:nth-of-type(2)::before{
+	content: '|';
+	display: inline;
+	color: #eeeeee;
+	margin-right: 33px;
+}
+.mg{
+	background-color: #eeeeee;
+	height: 1px;
+	border: none;
+	width: 543px;
+}
+section .mgright .mgnum{
+	margin-left: 10px;
+	height: 113px;
+	line-height: 113px;
+}
+section .mgright .mgnum .buynum{
+	width: 76px;
+	border: 1px solid #eeeeee;
+	text-align: center;
+}
+section .mgright .mgbutton{
+	height: 58px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+section .mgright .addshopcar{
+	height: 40px;
+	width: 158px;
+	color: #FF6537;
+	background: #ffffff;
+	border: 1px solid #ff6537;
+	border-radius: 5px;
+	font-size: 15px;
+	text-align: center;
+	margin-right: 24px;
+	cursor: pointer;
+}
+section .mgright .addshopcar svg{
+	font-size: 18px;
+}
+section .mgright .buy{
+	height: 40px;
+	width: 158px;
+	color: #ffffff;
+	background: #FF6537;
+	border: 1px solid #ff6537;
+	border-radius: 5px;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+section .mgright .mgassure{
+	height: 60px;
+	line-height: 60px;
+}
+section .mgright .mgassure svg{
+	font-size: 16px;
+	margin-left: 15px;
+}
+section .mgright .mgassure .assure{
+	margin-right: 12px;
+}
+section .mglink{
+	font-size: 12px;
+	color: #666666;
+}
+section .mglink>span{
+	cursor: pointer;
+}
+section .mglink svg{
+	font-size: 15px;
+}
+section .mglink .shoucang{
+	position: relative;
+	margin-right: 22px;
+	
+}
+section .mglink .shoucang svg{
+	position: absolute;
+	top: 0px;
+	display: none;	
+}
+section .mglink .shoucang .mgsvgcurrent{
+	display: block;
+}
+section .mglink>span{
+	margin-right: 30px;
+}
+
+section .mglink .kefu{
+	position: relative;
+	margin-right: 22px;
+	
+}
+section .mglink .kefu svg{
+	position: absolute;
+	top: 1px;
+	right: -18px;
+	display: none;	
+}
+section .mglink .kefu .mgsvgcurrent1{
+	display: block;
+}
+section .updown{
+	font-size: 12px;
+	color: #666666;
+	height: 72px;
+	line-height: 72px;
+	cursor: pointer;
+}
+/*选项卡——选项*/
+.mgintro .list{
+	width: 1149px;
+	height: 55px;
+	color: #666666;
+	line-height: 55px;
+	border: 1px solid #eaeaea;
+}
+.mgintro .list li{
+	float: left;
+	padding-left: 6px;
+	width: 164px;
+	cursor: pointer;
+}
+.mgintro .list li>span{
+	width: 115px;
+	text-align: center;
+	display: inline-block;
+}
+.mgintro .list li:after{
+	content: '|';
+	color: #eaeaea;
+	margin-left: 44px;
+}
+/*.mgintro .list li.hide:after {
+	display: none;
+}*/
+/*.mgintro .list li:nth-of-type(2)::after{
+	content: '|';
+	color: #eaeaea;
+	padding-left: 75px;
+}*/
+.licurrent{
+	color: #ff6537;
+	width: 160px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #efefef;
+	border-top: 5px solid #ff6537;
+}
+/*#divcurrent{
+	display: block;
+}*/
+/*选项卡——产品详情*/
+.introbox{
+	position: relative;
+}
+.mgintro .introduce{
+	margin-top: 85px;
+	margin-bottom: 150px;
+	display: block;
+	position: absolute;
+}
+/*选项卡——产品评论*/
+.comment{
+	margin-bottom: 95px;
+	display: none;
+	position: absolute;
+}
+.evatitle{
+				height: 183px;
+				border-bottom: 1px solid #eeeeee;
+				position: relative;
+				
+			}
+			.evatitle .evaper{
+				float: left;
+				/*line-height: 183px;*/
+				margin-top: 70px;
+				margin-left: 45px;
+				margin-right: 90px;
+			}
+			.evatitle .evaper span:nth-of-type(1){
+				font-size: 12px;
+				color: #494949;
+				
+				padding-right: 10px;
+			}
+			.evatitle .evaper span:nth-of-type(2){
+				font-size: 39px;
+				color: #FF6537;
+			}
+			.evatitle .evaper span:nth-of-type(3){
+				font-size: 17px;
+				color: #FF6537;
+			}
+			
+			.evatitle .evalevel{
+				/*height: 183px;*/
+				padding-top: 84px;
+				/*border: 3px solid lime;*/
+				
+				
+			}
+			.evatitle .evalevel li{
+				float: left;
+				border: 1px solid salmon;
+				text-align: center;
+				
+			}
+			
+			.evatitle .evalevel li>p{
+				width: 85px;
+				height: 16px;
+			}
+			.evatitle .evalevel li:nth-of-type(1)>p{
+				background-color: #ffdfd6;
+			}
+			.evatitle .evalevel li:nth-of-type(2)>p{
+				background-color: #ffc1ae;
+			}
+			.evatitle .evalevel li:nth-of-type(3)>p{
+				background-color: #ffa286;
+			}
+			.evatitle .evalevel li:nth-of-type(4)>p{
+				background-color: #ff835e;
+			}
+			.evatitle .evalevel li:nth-of-type(5)>p{
+				background-color: #FF6537;
+			}
+			.evatitle .evalevel li span{
+				font-size: 11px;	
+				height: 39px;
+				line-height: 38px;
+			}
+			.evatitle .evatip{
+				position: absolute;
+				left: 693px;
+				top: 50px;
+			}
+			.evatitle .evatip span{
+				background: #ff6536;
+				font-size: 9px;
+				color: #ffffff;
+				padding-top: 4px;
+				padding-bottom: 4px;
+			}
+			.evatitle .evasanjiao{
+				width: 0px;
+				height: 0px;
+				border-top: 10px solid #FF6536;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				position: relative;
+				left: 6px;
+			}
+			/*评论*/
+			.evaluate{
+				/*height: 136px;*/
+				margin-left: 25px;
+				padding-top: 30px;
+				padding-bottom: 52px;
+				border-bottom: 1px solid #eeeeee;
+				
+			}
+			.evaluate li{
+				height: 100px;
+			}
+			.evaluate li::after{
+				content: '';
+				height: 1px;
+				background: #E9E9E9;
+				margin-top: 20px;
+				display: block;
+			}
+			.evaluate .evauserpic{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				border: 2px solid #d9d9d9;
+				float: left;
+				overflow: hidden;
+				margin-right: 20px;
+
+			}
+			.evaluate .evauserpic img{
+				width: 100%;
+			}
+			.evaluate .evadetail{
+				font-size: 12px;
+				margin-top: 3px;
+			}
+			.evaluate .evadetail .evadetusermess>span:nth-of-type(1){
+				color: #494949;
+			}
+			.evaluate .evadetail .evamessicon{
+				height: 16px;
+				width: 16px;
+				background: #ffc600;
+				text-align: center;
+				display: inline-block;
+				margin-right: 32px;
+			}
+			.evaluate .evadetail .evadetusermess>span:nth-of-type(2){
+				color: #828282;
+				margin-right: 24px;
+			}
+			.evaluate .evadetail .evamess{
+				color: #555555;
+				margin-top: 16px;
+			}
+			/*分页*/
+			.evapaging{
+				font-size: 12px;
+				color: #666666;
+				margin: 24px 0;
+				margin-left: 12px;
+			}
+			.evapaging span{
+				margin-left: 13px;
+				margin-right: 13px;
+			}
+			.evapaging span:nth-of-type(2){
+				color: #FF6537;
+				text-decoration: underline;
+			}
+			section form{
+				font-size: 12px;
+				color: #666666;
+				width: 1180px;
+				margin-left: 35px;
+				margin-top: 65px;
+			}
+			section form #tip{
+				font-size: 12px;
+				color: #ff0000;
+				background: #fbfcbe;
+				height: 30px;
+				line-height: 30px;
+				width: 922px;
+				margin-left: 75px;
+				padding-left: 12px ;
+				margin-top: 35px;
+				margin-bottom: 26px;
+				display: none;
+			}
+			section form .starlevel{
+				position: relative;
+				top: -26px;
+				left: 173px;
+			}
+			section form .starlevel span{
+				font-size: 11px;
+				height: 17px;
+				width: 53px;
+				color: #ff6537;
+				border: 1px solid #ff6537;
+				line-height: 17px;
+				text-align: center;
+				display: none;
+			}
+			section form .starlevel .slcurrent{
+				display: inline-block;
+			}
+			section form svg{
+				font-size: 14px;
+			}
+			section form label{
+				width: 75px;
+				text-align: right;
+				display: inline-block;
+			}
+			section form label:nth-of-type(1){
+				height: 34px;
+				line-height: 34px;
+			}
+			section form label:nth-of-type(2),form .subpic,form textarea{
+				margin-bottom: 26px;
+			}
+			section form .outstar{
+				position: relative;
+				display: inline-block;
+				/*left: 0px;*/
+			}
+			section form .star{
+				position: relative;
+				right: 90px;
+			}
+			section form .star span{
+				width: 15px;
+			}
+			section form .unstar{
+				position: relative;
+			}
+			section form .unstar span{
+				width: 15px;
+				height: 15px;
+			}
+			section form .shoucangselected{
+				display: none;
+				position: relative;
+				/*left: -90px;*/
+			}
+			section form .shoucangunselected{
+				/*left: -90px;*/
+				position: relative;
+			}
+			section form #name1{
+				width: 148px;
+				height: 48px;
+				border: 1px solid #dddddd;
+			}
+			section form #commentmatter{
+				width: 899px;
+				height: 125px;
+				vertical-align: top;
+				border: 1px solid #dddddd;
+			}
+			
+			section form #checkcode{
+				width: 148px;
+				height: 48px;
+				border: 1px solid #dddddd;
+			}
+			section form #code{
+				color:#ffffff;/*字体颜色白色*/
+				background-color:#000000;	
+				font-size:20px;
+				font-family:"华康娃娃体W5";
+				padding:5px 15px 5px 15px;
+				margin-left:5%;		
+				cursor:pointer;
+				/*width: 78px;
+				height: 22px;*/
+			}
+			.subpic{
+				position:relative;
+				width:48px;
+				height:48px;
+				border:1px solid #e7e7e7; 
+				overflow:hidden;
+				display: inline-block;
+				/*vertical-align: top;*/
+				line-height:48px;
+				top: 30px;
+			}
+			.picbutton{
+				position:absolute;
+				top:0px;
+				left:0px;
+				width:100%;
+				height:100%;
+				/*line-height:48px;*/
+				text-align:center;
+				font-size: 21px;
+				color: #dad9d9;
+			}
+			#addpic{
+				position:absolute;
+				top:0px;
+				right:0px;
+				height:100%;
+				cursor:pointer; 
+				opacity:0;
+				filter:alpha(opacity:0);
+				z-index:999;
+			}
+			.subpictip{
+				vertical-align: middle;
+				height: 48px;
+				display: inline-block;
+				color: #aeaeae;
+			}
+			#submit{
+				width: 158px;
+				height: 42px;
+				color: #ffffff;
+				background: #ff6537;
+				text-align: center;
+				border: none;
+				margin-left: 510px;
+				/*margin-top: 75px;*/
+			}
+			
+/*选项卡——销售记录*/
+.salemen{
+	display: none;
+	position: absolute;
+	margin-top: 30px;
+}
+table{
+				/*width: ;*/
+				font-size: 12px;
+				text-align: center;
+				border-collapse: collapse;
+				margin-bottom: 70px;
+				
+			}
+			tr{
+				width: 1095px;
+				margin: 0px auto;
+				color: #666666;
+				height: 66px;
+				/*line-height: 66px;*/
+				border-bottom: 1px solid #e6e6e6;
+			}
+			tr:nth-of-type(1){
+				background: #f3f3f3;
+				height: 43px;
+				line-height: 43px;
+				color: #555555;
+				border: none;
+			}
+			td span svg{
+				font-size: 13px;
+
+			}
+			/*td span:nth-of-type(1){
+				position: relative;
+				top: 10px;
+				left: 10px;
+			}*/
+
+			tr td:nth-of-type(1){
+				width: 222px;
+			}
+			tr td:nth-of-type(2){
+				width: 486px;
+			}
+			tr td:nth-of-type(3){
+				width: 167px;
+			}
+			tr td:nth-of-type(4){
+				width: 213px;
+				font-size: 11px;
+			}
+			/*.userlogo{
+				float: left;
+
+			}
+			.buyer{
+				float: left;
+			}*/
+.introbox::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.introbox{
+	height: 1000px;
+}
+/*footer底部部分*/
+         footer{
+         	/*margin-top: 40px;*/
+         	width: 100%;
+         	height: 144px;
+         	background: #2c2c2c;
+         	
+         }
+         footer ul{
+         	height: 57px;
+         }
+         footer li{
+         	float: left;
+         	margin: 38px 74px 48px 74px;
+         }
+         
+         /*aside部分*/
+       aside{
+       	position: fixed;
+       	right: 0px;
+       	top: 0px;
+       	height: 100%;
+       	width: 35px;
+       	background: #202020;
+       	color: #ffffff;
+       }
+       aside svg{
+       	font-size: 20px;
+       	
+       }
+       aside ul{
+       	margin-top: 55px;
+       }
+       aside li{
+       	width: 33px;
+       	height: 40px;
+       	text-align: center;
+       	line-height: 40px;
+       	/*border: 1px solid salmon;*/
+       	margin-bottom: 10px;
+       	cursor: pointer;
+       }
+       aside li:nth-of-type(3){
+       	width: 33px;
+       	height: 150px;
+       	margin-bottom: 145px;
+       }
+       aside li:nth-of-type(3) div{
+       	font-size: 12px;
+       	width: 13px;
+       	height: 40px;
+       	line-height: 25px;
+       	padding-left: 10px;
+       }
+       aside li:nth-of-type(3) span{
+       	display: block;
+       	border-radius: 50%;
+       	font-size: 11px;
+       	width: 19px;
+       	height: 19px;
+       	background: #c40000;
+       	text-align: center;
+       	line-height: 19px;
+       	margin-top: 40px;
+       	margin-left: 7px;
+       }
+       aside li:nth-of-type(5){
+       	cursor: default;
+       }
+       aside li:nth-of-type(6) svg{
+       	font-size: 28px;
+       }
+       
+       /*鼠标经过侧边栏图标时显示*/
+      /*.aside-tip{
+      	position: absolute;
+      	right: 35px;
+      	top: 0px;
+      	
+      }*/
+      .aside-tip li{
+      	display: none;
+      	
+      }
+      .aside-tip .tip{
+      	font-size: 12px;
+      	color:#dddddd;
+      	background: #434343;
+      	width: 117px;
+      	height: 38px;
+      	line-height: 38px;
+      	text-align: center;
+      	z-index: 999;
+      }
+      .aside-tip .erweima{
+      	width: 150px;
+      	height: 150px;
+      	background: #ffffff;
+      	text-align: center;
+      	padding-top: 25px;
+      	color: #787878;
+      }
+      .aside-tip .erweima img{
+      	padding-bottom: 17px;      
+      	}
+      .aside-tip li:nth-of-type(1){
+      	position: fixed;
+      	right: 35px;
+      	top: 62px;
+      }
+      .aside-tip li:nth-of-type(2){
+      	position: fixed;
+      	right: 35px;
+      	top: 110px;
+      }
+      .aside-tip li:nth-of-type(3){
+      	position: fixed;
+      	right: 35px;
+      	top: 446px;
+      }
+      .aside-tip li:nth-of-type(4){
+      	position: fixed;
+      	right: 35px;
+      	top: 384px;
+      	font-size: 11px;
+      }
+  
+      .aside-tip li:nth-of-type(5){
+      	position: fixed;
+      	right: 35px;
+      	top: 544px;
+      }
+      aside .sanjiao{
+      	border-left: 14px solid #434343 ;
+      	border-top: 7px solid transparent;
+      	border-bottom: 7px solid transparent;
+      	position: fixed;
+      	right: 100px;
+      	top: 0px;
+      	z-index: 99;
+      	display: block;
+      	width: 0px;
+      	height: 0px;
+      }
+      /*鼠标点击侧边栏图标时显示*/
+      .click input-placeholder{
+      	color: red;
+      }
+      
+       /*未登录时 点击侧边栏我的资料,出现的块*/
+      /*点击我的资料图标*/
+       .click .mymessage{
+       	width: 295px;
+       	height: 340px;
+       	background: #ffffff;
+       	padding-top: 45px;
+       	box-shadow:0 0 5px rgba(0,0,0,0.4);
+       	/*border: 1px solid salmon;*/
+       	padding-left: 50px;
+       	position: fixed;
+       	top: 62px;
+       	right: 35px;
+       	display: none;
+       }
+       .click .mymessage>p{
+       	font-size: 12px;
+       	color: #333333;
+       	margin-bottom: 15px;
+       }
+       #account,#password{
+       	width: 212px;
+       	height: 34px;
+       	border: 1px solid #e9e9e9;
+       	font-size: 11px;
+       	padding-left: 26px;
+       	margin-bottom: 13px;
+       }
+       .click .button-login{
+       	width: 242px;
+       	height: 44px;
+       	background: #f54f4f;
+       	border: none;
+       	font-size: 12px;
+       	color: #ffffff;
+       	cursor: pointer;
+       }
+       .click .svgacc svg{
+       	font-size: 17px;
+       	position: relative;
+       	left: -238px;
+       	bottom: -1px;
+       	color: #b6b6b6;
+       }
+       .click .svgpw svg{
+       	font-size: 13px;
+       	position: relative;
+       	left: -238px;
+       	bottom: -1px;
+       	color: #b5b5b5;
+       }
+       
+       .click  form p{
+       	height: 17px;
+       	width: 247px;
+       	text-align: right;
+       	padding-top: 24px;
+       	padding-bottom: 13px;
+       	/*line-height: 13px;*/
+       }
+       .click a{
+       	font-size: 12px;
+       	color: #6d6d6d;
+       	text-decoration: none;
+       	cursor: pointer;
+       }
+       .click hr{
+       	width: 240px;
+       	background-color: #e5e5e5;
+       	height: 1px;
+       	border: none;
+       	margin-bottom: 10px;
+       }
+       .click span{
+       	font-size: 11px;
+position: relative;
+       }
+       .click .svgweixin svg{
+       	font-size: 20px;
+       	cursor: pointer;
+       	position: absolute;
+       	/*display: none;*/
+       }
+       .click .svgweixin svg:nth-of-type(2){
+       	display: none;
+       }
+       #accounttip1{
+       position: absolute;
+       	right: 0px;
+       	top: 85px;
+       }
+       #passwordtip1{
+       	position: absolute;
+       	right: 0px;
+       	top: 135px;
+       }
+       
+       /*点击我的收藏图标*/
+      .click .mycollect{
+       	width: 295px;
+       	height: 340px;
+       	background: #ffffff;
+       	padding-top: 45px;
+       	box-shadow:0 0 5px rgba(0,0,0,0.4);
+       	/*border: 1px solid salmon;*/
+       	padding-left: 50px;
+       	position: fixed;
+       	top: 110px;
+       	right: 35px;
+       	display: none;
+       }
+       .click .mycollect>p{
+       	font-size: 12px;
+       	color: #333333;
+       	margin-bottom: 15px;
+       }
+       #accounttip2{
+       position: absolute;
+       	right: 0px;
+       	top: 85px;
+       }
+       #passwordtip2{
+       	position: absolute;
+       	right: 0px;
+       	top: 135px;
+       }
+       
+       /*点击购物车图标*/
+      .click .myshopcar{
+      	position: fixed;
+      	right: 0;
+      	top: 0;
+      	height: 100%;
+      	width: 279px;
+      	background: #e6e6e6;
+      	font-size: 12px;
+      	display: none;
+      }
+      .click .myshopcar .head{
+      	height: 38px;
+      	background: #303030;
+      	color: #dddddd;
+      	line-height: 38px;
+      	position: relative;
+      }
+      .click .left{
+
+      	margin-left: 10px;
+      	position: absolute;
+      	/*border: 1px solid salmon;*/
+      	height: 33px;
+      	width: 23px;
+      	top: 1px;
+      	padding-left: 5px;
+      	cursor: pointer;
+      }
+      .click .middle{
+      	text-align: center;
+      	margin-left: auto;
+      	margin-right: auto;
+      	width: 75px;
+      }
+      .click .myshopcar .content{
+      	/*background: url(../img/kongshopcar.PNG) no-repeat;*/
+      	position: relative;
+      	top: 180px;
+      	
+      	text-align: center;
+      	/*margin-top: auto;
+      	margin-bottom: auto;*/
+      }
+      .click .myshopcar .foot{
+      	position:  fixed;
+      	bottom: 0px;
+      	/*padding-left: 10px;*/
+      	width: 279px;
+      	background: #ffffff;
+      	/*line-height: 12px;*/
+      	text-align: center;
+      	
+      	
+      }
+      .click .myshopcar .foot>p{
+      	position: relative;
+      	width: 279px;
+      	padding-top: 20px;
+      	color: #7c7c7c;
+      	
+      }
+      .click .myshopcar .red{
+      	color: #e43a3d;
+      }
+      .click .myshopcar .othleft{
+      	position: absolute;
+      	left: 20px;
+      }
+      .click .myshopcar .right{
+      	right: 20px;
+      	position: absolute;
+      	
+      }
+      .click .myshopcar input{
+      	margin-top: 25px;
+      	width: 250px;
+      	height: 44px;
+      	color: #ffffff;
+      	background: #e43a3d;
+      	border: none;
+      	border-radius: 2%;
+      	cursor: pointer;
+      }

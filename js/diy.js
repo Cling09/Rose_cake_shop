@@ -1,0 +1,1 @@
+//使用suggest.js和drinks.js

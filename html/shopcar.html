@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="../css/shopcar.css" />
+	</head>
+	<body>
+		<header>
+			<p>
+			<h1>
+			<img src="../img/logo-left.png" alt="rose cake shop logo" />
+		</h1>
+
+			<div class="sel">
+				<p class="select" onclick="Select" id="select">
+					<input type="text" maxlength="30" placeholder="请搜索~"/>
+					<span>
+			<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-sousuo"></use>
+</svg>
+</span>
+				</p>
+				<p class="eg">
+					<span>芝士蛋糕</span>
+					<span>面包</span>
+					<span id="coffee">咖啡</span>
+				</p>
+			</div>
+<!--<div class="shopcar-out1">-->
+				<div class="shopcar">
+					<span class="icon-shopcar">
+				<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-unie62d"></use>
+</svg>
+			</span>
+					<label>我的购物车</label>
+					<span class="icon-xiala">
+				<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-xiala"></use>
+</svg>
+			</span>
+			<ul class="shopcar-hidden">
+				<li>
+					<span>
+					<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-gouwuche2"></use>
+</svg>
+</span>
+
+					<span class="scdes">您的购物车内暂时没有任何产品。</span>
+				</li>
+			</ul>
+				</div>
+		</p>
+		</header>
+		
+		<nav>
+			<ul>
+				<li>首页</li>
+				<li>Rose主推</li>
+				<li>咖啡/饮品</li>
+				<li>糕点点心</li>
+				<li>手工烘焙</li>
+				<li>会员登录</li>
+			</ul>
+		</nav>
+		
+    	<div class="pic">
+    		<ul>
+    			<li ><img src="../img/div3.1.jpg" alt="现烤烘焙面包"></li>
+    			<li><img src="../img/div3.2.jpg" alt="美味蛋糕"></li>
+    			
+    		</ul>
+    		<div class="lebor"><span id="left"></span></div>
+    		<div class="ribor"><span id="right"></span></div>
+            <ol>
+                <li class="current"></li>
+                <li></li>
+            </ol>
+    	</div>
+		
+		<section>
+			<table class="big">
+				<tr>
+					<th>&nbsp;</th>
+					<th>名称</th>
+					<th>价格</th>
+					<th>数量</th>
+					<th>小计</th>
+					<th>操作</th>
+				</tr>
+				<tbody id="tb">
+				<tr>
+					<td><input type="checkbox" id="txt" class="checkbox" checked="" /></td>
+					<td>无糖咖啡饮料930ml*6瓶 日本原装进口</td>
+					<td class="a">￥169.00</td>
+					<td class="b"><input type="number" name="num" class="num" value="1"/></td>
+					<td class="c">￥169.00</td>
+					<td><svg class="icon" aria-hidden="true" onclick='del(this)'>
+  <use xlink:href="#icon-shanchu"></use>
+</svg></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="txt" class="checkbox" checked=''/></td>
+					<td>奥地利进口雷诺速溶瓶装浓咖啡饮料冲饮</td>
+					<td>￥158.00</td>
+					<td><input type="number" name="num" class="num" value="1"/></td>
+					<td>￥158.00</td>
+					<td><svg class="icon" aria-hidden="true" onclick='del(this)'>
+  <use xlink:href="#icon-shanchu"></use>
+</svg></td>
+				</tr>
+				</tbody>
+			</table>
+			<p class="p1">
+				<span class="outleft"><input type="checkbox" class="checkboxall" checked=''/>  全选</span>
+				<span class="outright">
+				<!--<span class="inleft">商品总金额：</span>
+				<span class="inright">￥327.00</span>-->
+				<table class="small">
+						<tr>
+							<td class="inleft">商品总金额：</td>
+							<td class="inright">￥327.00</td>
+						</tr>
+						<tr>
+							<td class="inleft">优惠金额：</td>
+							<td class="inright">￥0.00</td>
+						</tr>
+					</table>
+				</span>
+			</p>
+			
+			<div class="clright">
+				<table class="small1">
+					<tr>
+						<td>应付金额：</td>
+						<td>￥<span>327.00</span></td>
+					</tr>
+					<tr>
+						<td class="continue">继续购物</td>
+						<td><input type="button" id="settle" value="结算订单" /></td>
+					</tr>
+				</table>
+			</div>
+			
+		</section>
+		
+		
+		<footer>
+			<ul>
+				<li>
+					<img src="../img/footer1.png" alt="品种多样" />
+				</li>
+				<li>
+					<img src="../img/footer2.png" alt="放心食材" />
+				</li>
+				<li>
+					<img src="../img/footer3.png" alt="营养健康" />
+				</li>
+				<li>
+					<img src="../img/footer4.png" alt="新鲜烘焙" />
+				</li>
+			</ul>
+		</footer>
+		
+		
+		<aside>
+			<ul>
+				<li>
+					<svg class="icon" aria-hidden="true" >
+  <use xlink:href="#icon-z-user"></use>
+</svg>
+				</li>
+				<li>
+					<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-shoucang"></use>
+</svg>
+				</li>
+				<li>
+					<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-20gouwuche"></use>
+</svg>
+<div>购物车</div>
+<span>0</span>
+
+				</li>
+				<li>
+					<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-liuyan"></use>
+</svg>
+				</li>
+				<li>
+					<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon--erweima"></use>
+</svg>
+				</li>
+				<li>
+					<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-top"></use>
+</svg>
+				</li>
+				
+			</ul>
+		</aside>
+		<!--鼠标经过侧边栏图标时显示-->
+		<div class="aside-tip">
+			<ul>
+				<li>
+					<div class="tip">我的资料</div>
+			<span class="sanjiao"></span>
+				</li>
+				<li>
+					<div class="tip">我的收藏</div>
+			<span class="sanjiao"></span>
+				</li>
+				<li>
+					<div class="tip">留言</div>
+			<span class="sanjiao"></span>
+				</li>
+				
+				<li>
+					<div class="erweima">
+				<img src="../img/erweima.png" alt="手机版二维码" />
+				<p>查看手机网站</p>
+				<span class="sanjiao"></span>
+			</div>
+				</li>
+				
+				<li>
+					<div class="tip">回到顶部</div>
+			<span class="sanjiao"></span>
+				</li>
+				
+			</ul>
+
+		</div>
+	
+		<!--鼠标点击侧边栏图标时显示-->
+		<div class="click">
+			<!--点击我的资料图标-->
+			<div class="mymessage">
+				<p>会员登录</p>
+				<form action="../index.html" name="formlogin1" id="login1">
+					<input type="text" name="account" id="account" placeholder="账号" />
+					<span class="svgacc">
+						<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-yonghu"></use>
+</svg>
+</span>
+<span id="accounttip1"></span>
+<input type="password" name="password" id="password" placeholder="密码" />
+					<span class="svgpw">
+						<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-mima"></use>
+</svg>
+					</span>
+					<b class="pwtip"></b>
+					<span id="passwordtip1"></span>
+					<input type="submit" name="登录" value="登录" class="button-login"/>
+					<p><a href="registered.html">免费注册></a></p>
+					<hr class="bottom"/>
+					<span class="svgweixin">其他账号登录：
+					
+						<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-weixin-copy"></use>
+</svg>
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-weixin"></use>
+</svg>
+			</span>
+				</form>
+			</div>
+			<!--点击我的收藏图标-->
+			<div class="mycollect">
+				<p>会员登录</p>
+				<form action="../index.html" name="formlogin2" id="login2">
+					<input type="text" name="account" id="account" placeholder="账号" />
+					<span class="svgacc">
+						<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-yonghu"></use>
+</svg>
+</span>
+<span id="accounttip2"></span>
+<input type="password" name="password" id="password" placeholder="密码" />
+					<span class="svgpw">
+						<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-mima"></use>
+</svg>
+					</span>
+					<b class="pwtip"></b>
+					<span id="passwordtip2"></span>
+					<input type="submit" name="登录" value="登录" class="button-login"/>
+					<p><a href="registered.html">免费注册></a></p>
+					<hr />
+					<span class="svgweixin">其他账号登录：
+					
+						<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-weixin-copy"></use>
+</svg>
+<svg class="icon" aria-hidden="true" >
+  <use xlink:href="#icon-weixin"></use>
+</svg>
+			</span>
+				</form>
+			</div>
+			<!--点击购物车图标-->
+			<div class="myshopcar">
+				<div class="head">
+					
+					<span class="left">>></span>
+					<p class="middle">我的购物车</p>
+					
+				</div>
+			    <div class="content">
+			    	<img src="../img/kongshopcar.PNG" alt="空购物车" />
+			    </div>
+			    <div class="foot">
+			    	<p>
+			    		<span class="othleft">共0件商品</span>
+			    		<span class="right">共计<span class="red">￥0.00</span></span>
+			    	</p>
+			    	<input type="button" value="去购物车结算" class="settle">
+			    </div>
+			</div>
+		</div>
+		
+		
+		<script src="../js/jquery-3.2.1.js"></script>
+		<script src="../js/iconfont.js"></script>
+		<script src="../js/shopcar.js"></script>
+	</body>
+</html>

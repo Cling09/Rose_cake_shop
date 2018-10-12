@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			html{
+				background: #f6f6f6;
+			}
+			section{
+				margin-left: 55px;
+				background: white;
+				width: 1200px;
+			}
+			.limit{
+				height: 504px;
+			}
+			.limit>p,.new>p,.drink>p{
+				font-size: 22px;
+				color: #333333;
+				font-weight: 400;
+				background: #f6f6f6;
+				line-height: 38px;
+			}
+            .bigleft{
+            	float: left;
+            }
+            .bigleft ul::after{
+            	content: '';
+            	display: block;
+            	clear: both;
+            }
+            .bigleft ul{
+            	width: 930px;
+            	height: 408px;
+            }
+            .bigleft li{
+            	height: 190px;
+            	width: 465px;
+            	float: left;
+            	/*border: 1px solid salmon;*/
+            	margin-bottom: 14px;
+            }
+            .bigleft .limit-pic{
+            	float: left;
+            	width: 190px;
+            	height: 190px;
+            	padding: 0px 8px;
+            }
+            .bigleft li img{
+            	width: 100%;
+            	cursor: pointer;
+            }
+            /*.bigleft img{
+            	float: left;
+            }*/
+            .bigleft .limit-text{
+            	float: left;
+            	width: 232px;
+            	padding-top: 37px;
+            }
+            .goodsname{
+            	font-size: 12px;
+            	color: #000000;
+            	line-height: 24px;
+            	cursor: pointer;
+            }
+            .shortdes{
+            	font-size: 12px;
+            	color: #a9a9a9;
+            	margin: 17px 0px 19px 0px;
+            }
+            .price{
+            	font-size: 9px;
+            	color: #cc3300;
+            }
+            .price span{
+            	font-size: 15px;
+            	font-weight: bold;
+            }
+            .smallright{
+            	float: right;
+            	width: 245px;
+            	height: 411px;
+            	margin: 0;
+            }
+            .smallright img{
+            	width:100%;
+            }
+            
+            /* 新推荐部分 .new*//*咖啡饮品部分 .drink*/
+           .new{
+           	height: 447px;
+           }
+           .new p,.drink>p{
+           	padding-top: 54px;
+           	border-bottom: 2px solid #333333;
+           }
+            .new ul{
+           	width: 1200px;
+           	height: 411px;
+           }
+            .new li{
+            	float: left;
+            }
+            .new li img{
+           	width: 100%;
+           }
+           .drink{
+           	height: 444px;
+           }
+          /*footer底部部分*/
+         footer{
+         	margin-top: 142px;
+         	width: 100%;
+         	height: 144px;
+         	background: #2c2c2c;
+         }
+         footer ul{
+         	height: 57px;
+         }
+         footer li{
+         	float: left;
+         	margin: 38px 79px 48px 79px;
+         }
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="limit">
+				<p>今日限时购</p>
+				<div class="bigleft">
+					<ul>
+						<li>
+							<div class="limit-pic">
+								<img src="img/div5.1.jpg" alt="曲奇"/>
+							</div>
+							<div class="limit-text">
+								<p class="goodsname">曲奇饼干 什锦巧克力味饼干 浓浓牛油香味</p>
+								<p class="shortdes">风靡日本，精美高贵时尚</p>
+								<p class="price">￥<span>44.</span>90</p>
+							</div>
+						</li>
+						<li>
+							<div class="limit-pic">
+								<img src="img/div5.2.jpg" alt="玫瑰饼"/>
+							</div>
+							<div class="limit-text">
+								<p class="goodsname">现烤 云南特产 经典玫瑰花饼 甜而不腻 鲜花饼</p>
+								<p class="shortdes">无任何添加剂，纯手工制作</p>
+								<p class="price">￥<span>50.</span>80</p>
+							</div>
+						</li>
+						<li>
+							<div class="limit-pic">
+								<img src="img/div5.3.jpg" alt="马卡龙"/>
+							</div>
+							<div class="limit-text">
+								<p class="goodsname">正宗法式马卡龙甜点 糕点 西式点心休闲零食品</p>
+								<p class="shortdes">新鲜正宗，品质保证</p>
+								<p class="price">￥<span>35.</span>90</p>
+							</div>
+						</li>
+						<li>
+							<div class="limit-pic">
+								<img src="img/div5.4.jpg" alt="蛋糕"/>
+							</div>
+							<div class="limit-text">
+								<p class="goodsname">蛋糕冰淇淋 100%天然乳脂 健康兼美味漂亮的童趣图案</p>
+								<p class="shortdes">冰淇淋蛋糕销售佼佼者</p>
+								<p class="price">￥<span>278.</span>00</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="smallright">
+					<img src="img/div5.5.png" alt="蒸蛋糕" />
+				</div>
+			</div>
+			
+			
+			<div class="new">
+				<p>新推荐</p>
+				<div class="overall">
+					<ul>
+						<li>
+							<!--<img src="img/div6.1.png" alt="品牌文化" />
+							<img src="img/div6.2.png" alt="新鲜出炉" />-->
+							
+							<div class="top">
+								<img src="img/div6.1.png" alt="品牌文化" />
+							</div>
+							<hr />
+							<div class="bottom">
+								<img src="img/div6.2.png" alt="新鲜出炉" />
+							</div>
+						</li>
+						<li>
+							<img src="img/div6.3.jpg" alt="蛋糕1" />
+						</li>
+						<li>
+							<img src="img/div6.4.jpg" alt="蛋糕2" />
+						</li>
+						<li>
+							<img src="img/div6.5.jpg" alt="面包" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="drink">
+				<p>咖啡饮品</p>
+				<div class="bigleft">
+					<ul>
+						<li>
+							<div class="limit-pic">
+								<img src="img/div7.1.jpg" alt="乐天芒果果汁"/>
+							</div>
+							<div class="limit-text">
+								<p class="goodsname">韩国原装进口乐天芒果汁饮料  一箱 180ml×15罐</p>
+								<p class="shortdes">夏季饮品，零食品</p>
+								<p class="price">￥<span>47.</span>50</p>
+							</div>
+						</li>
+						<li>
+							<div class="limit-pic">
+								<img src="img/div7.3.jpg" alt="西梅汁"/>
+							</div>
+							<div class="limit-text">
+								<p class="goodsname">美国原装进口饮料 地扪西梅汁 纯果汁不加防腐剂</p>
+								<p class="shortdes">果蔬汁，纯果汁不加水</p>
+								<p class="price">￥<span>39.</span>00</p>
+							</div>
+						</li>
+						<li>
+							<div class="limit-pic">
+								<img src="img/div7.2.jpg" alt="咖啡"/>
+							</div>
+							<div class="limit-text">
+								<p class="goodsname">明星产品 速溶黑咖啡 无糖纯咖啡粉 无奶顺滑</p>
+								<p class="shortdes">2*100g 零添加</p>
+								<p class="price">￥<span>99.</span>90</p>
+							</div>
+						</li>
+						
+						<li>
+							<div class="limit-pic">
+								<img src="img/div7.4.jpg" alt="奶茶"/>
+							</div>
+							<div class="limit-text">
+								<p class="goodsname">统一assam 阿萨姆小奶茶360ml/瓶 椰奶型    小椰</p>
+								<p class="shortdes">丝柔顺滑，回到奶茶小时候</p>
+								<p class="price">￥<span>6.</span>90</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="smallright">
+					<img src="img/div7.5.png" alt="拉花咖啡" />
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<ul>
+				<li>
+					<img src="img/footer1.png" alt="品种多样" />
+				</li>
+				<li>
+					<img src="img/footer2.png" alt="放心食材" />
+				</li>
+				<li>
+					<img src="img/footer3.png" alt="营养健康" />
+				</li>
+				<li>
+					<img src="img/footer4.png" alt="新鲜烘焙" />
+				</li>
+			</ul>
+		</footer>
+		<aside></aside>
+	</body>
+</html>

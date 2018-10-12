@@ -1,0 +1,788 @@
+*{
+        		
+        		margin:0px;
+        		padding:0px;
+        		list-style:none;
+        	}
+        	html{
+				background: #f6f6f6;
+			}
+			body{
+				min-width: 1200px;
+			}
+        	/*header部分*/
+        	.icon {
+				width: 1em;
+				height: 1em;
+				vertical-align: -0.15em;
+				fill: currentColor;
+				overflow: hidden;
+			}
+			
+			header {
+				width: 100%;
+				height: 100px;
+				
+			}
+			
+			header h1 {
+				/*width: 528px;*/
+				/*height: 100px;*/
+				width: 257px;
+				height: 52px;
+				/*text-align: center;*/
+				float: left;
+				margin: 15px 144px 22px 69px;
+			}
+			
+			.sel {
+				float: left;
+				width: 560px;
+			}
+			
+	
+			
+			.select {
+				border: 1px solid #dddddd;
+				width: 439px;
+				height: 40px;
+				margin-top: 27px;
+			}
+			
+			.select input {
+				border: none;
+				width: 364px;
+				height: 40px;
+			}
+			
+			.select span {
+				position: absolute;
+				display: inline-block;
+				width: 75px;
+				height: 40px;
+				text-align: center;
+				background: #2b2b2b;
+				cursor: pointer;
+			}
+			
+			.sel svg {
+				margin-top: 12px;
+			}
+			
+			.eg {
+				margin-left: 3px;
+			}
+			
+			.eg span {
+				font-size: 12px;
+				margin-right: 10px;
+				margin-top: 6px;
+				color: #666666;
+				cursor: pointer;
+			}
+			
+			.shopcar {
+				float: left;
+				border: 1px solid #e6e6e6;
+				width: 156px;
+				height: 44px;
+				line-height: 32px;
+				margin-top: 24px;
+				cursor: pointer;
+				
+			}
+			
+			.shopcar label {
+				color: #919191;
+				font-size: 11px;
+				margin-right: 14px;
+			}
+			
+			.icon-shopcar {
+				color: #434343;
+				margin-left: 9px;
+				margin-right: 23px;
+			}
+			
+			.icon-xiala {
+				color: #929292;
+			}
+			/*.shopcar-out1{
+				position: relative;
+				border:  1px solid black;
+				
+			}*/
+			.shopcar-hidden {
+				position: relative;
+				width: 302px;
+				height: 142px;
+				color: #b2b2b2;
+			margin-top:7px ;
+			margin-right: 2000px;
+				/*vertical-align: middle;*/
+				border: 1px solid #e6e6e6;
+				display: none;
+				background: #fff;
+				z-index: 2;
+			}
+			
+			.shopcar-hidden svg {
+				
+				width: 58px;
+				height: 53px;
+				margin-right: 28px;
+				margin-top: 43px;
+				vertical-align: middle;
+			}
+			
+			.scdes {
+				position: absolute;
+				font-size: 11px;
+				line-height: 17px;
+				margin-top: 62px;
+				width: 132px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			
+			/*导航栏部分*/
+			nav{
+				width: 100%;
+				background: #2d2d2d;
+				height: 50px;
+			}
+			nav ul{
+				padding-left: 75px;
+				height: 50px;
+			}
+			nav li{
+				float: left;
+				color: #ffffff;
+				font-size: 16px;
+				width: 120px;
+				height: 20px;
+				text-align: center;
+				/*line-height: 34px;*/
+				/*padding-top: 15px;
+				padding-bottom: 15px;*/
+				padding: 15px 0;
+				margin-right: 12px;
+				cursor: pointer;
+			}
+			nav .current{
+				background: #33c0e0;
+			}
+        	/*轮播图部分*/
+        	.pic{
+        		width:100%;
+        		height: 500px;
+        		margin-bottom: 12px;
+        		overflow:hidden;
+				position: relative;
+        	}
+        	.pic img{
+        		width: 100%;
+        		height: 500px;
+        	}
+        	.pic ul{
+        		cursor: pointer;
+        	}
+        	.pic ul::after{
+        		content: '';
+        		display: block;
+        		clear: both;
+        	}
+        	.pic ul li{
+        		float:left;
+        		width: 100%;
+        		height: 500px;
+        		position: absolute;
+     
+        		
+        	}
+        	
+        	.pic span{
+				cursor: pointer;
+				position: absolute;
+		
+				z-index: 99;
+				width: 20px;
+			}
+        	
+        	#left{
+				background: url(../img/spirte.png) no-repeat -2px -13px;		
+				width: 45px;
+				height: 75px;
+				/*position: fixed;*/
+				
+			}
+			#right{
+				background: url(../img/spirte.png) no-repeat -55px -13px;
+				width: 45px;
+				height: 75px;
+			
+			}
+			.lebor{
+				width: 45px;
+				height: 75px;
+				position: absolute;
+				top: 200px;
+				left: 20px;
+				background: rgba(188, 209, 216, 0.4);
+				border-radius: 10%;
+			}
+			.ribor{
+				width: 45px;
+				height: 75px;
+				position: absolute;
+				top: 200px;
+				right: 60px;
+				background: rgba(188, 209, 216, 0.4);
+				border-radius: 10%;
+				
+			}
+            .pic ol{
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                margin-left: -30px;
+            }
+            .pic ol li{
+                width: 20px;
+                height: 20px;
+                border: 1px solid red;
+                border-radius: 50%;
+                float: left;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .pic ol .current{
+                background: #fff;
+            }
+            
+/*section 表单部分*/
+section{
+	width: 1160px;
+	height: 417px;
+	background: #ffffff;
+	margin-left:auto ;
+	margin-right: auto;
+}
+
+section form{
+	width: 380px;
+	height: 390px;
+	margin-left:auto ;
+	margin-right: auto;
+	padding-top: 12px;
+	background: #ffffff;
+	position: relative;
+}
+section form label{
+	font-size: 12px;
+	line-height: 25px;
+	color: #333333;
+	
+	display: inline-block;
+	width: 85px;
+	margin-right: ;
+	text-align: right;
+}
+section form input{
+	margin-bottom: 12px;
+	border: 1px solid #dadada;
+	background: #f7f7f7;
+}
+#account1,#password1,#repassword,#name,#email,#phone{
+	width: 270px;
+	height: 23px;
+}
+#premobile{
+	width: 110px;
+	height: 25px;
+	margin-left: -3px;
+	border: 1px solid #dadada;
+	background: #f7f7f7;
+	color: #8c8c8c;
+}
+#mobile{
+	width: 156px;
+	height: 23px;
+}
+#message{
+	width: 270px;
+	height: 74px;
+	border: 1px solid #dadada;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+.submit{
+	width:380px;
+	height: 45px;
+	background: #5ab4ff;
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	border: none;
+}
+.notnull{
+	color: red;
+	font-size: 12px;
+}
+/*#accounttip{
+	font-size: 12px;
+	color: #c32102;
+	width: 104px;
+	height: 33px;
+	border: 1px solid salmon;
+	position: absolute; 
+	top: 7px;
+	right: -100px;
+	text-align: center;
+	line-height: 33px;
+}
+#passwordtip{
+	font-size: 12px;
+	color: #c32102;
+	width: 104px;
+	height: 33px;
+	border: 1px solid salmon;
+	position: absolute; 
+	top: 44px;
+	right: -100px;
+	text-align: center;
+	line-height: 33px;
+}
+#repasswordtip{
+	font-size: 12px;
+	color: #c32102;
+	width: 104px;
+	height: 33px;
+	border: 1px solid salmon;
+	position: absolute; 
+	top: 81px;
+	right: -100px;
+	text-align: center;
+	line-height: 33px;
+}
+#nametip{
+	font-size: 12px;
+	color: #c32102;
+	width: 104px;
+	height: 33px;
+	border: 1px solid salmon;
+	position: absolute; 
+	top: 118px;
+	right: -100px;
+	text-align: center;
+	line-height: 33px;
+}
+#emailtip{
+	font-size: 12px;
+	color: #c32102;
+	width: 104px;
+	height: 33px;
+	border: 1px solid salmon;
+	position: absolute; 
+	top: 155px;
+	right: -100px;
+	text-align: center;
+	line-height: 33px;
+}
+#mobiletip{
+	font-size: 12px;
+	color: #c32102;
+	width: 104px;
+	height: 33px;
+	border: 1px solid salmon;
+	position: absolute; 
+	top: 192px;
+	right: -100px;
+	text-align: center;
+	line-height: 33px;
+}
+#phonetip{
+	font-size: 12px;
+	color: #c32102;
+	width: 104px;
+	height: 33px;
+	border: 1px solid salmon;
+	position: absolute; 
+	top: 230px;
+	right: -100px;
+	text-align: center;
+	line-height: 33px;
+}*/
+#tip{
+	font-size: 12px;
+	color: #c32102;
+	width: 300px;
+	height: 33px;
+	position: absolute; 
+	top: 0px;
+	right: -300px;
+	/*text-align: center;*/
+	line-height: 33px;
+}
+
+
+
+/*footer底部部分*/
+         footer{
+         	margin-top: 40px;
+         	width: 100%;
+         	height: 144px;
+         	background: #2c2c2c;
+         }
+         footer ul{
+         	height: 57px;
+         }
+         footer li{
+         	float: left;
+         	margin: 38px 74px 48px 74px;
+         }
+         
+         /*aside部分*/
+       aside{
+       	position: fixed;
+       	right: 0px;
+       	top: 0px;
+       	height: 100%;
+       	width: 35px;
+       	background: #202020;
+       	color: #ffffff;
+       }
+       aside svg{
+       	font-size: 20px;
+       	
+       }
+       aside ul{
+       	margin-top: 55px;
+       }
+       aside li{
+       	width: 33px;
+       	height: 40px;
+       	text-align: center;
+       	line-height: 40px;
+       	/*border: 1px solid salmon;*/
+       	margin-bottom: 10px;
+       	cursor: pointer;
+       }
+       aside li:nth-of-type(3){
+       	width: 33px;
+       	height: 150px;
+       	margin-bottom: 145px;
+       }
+       aside li:nth-of-type(3) div{
+       	font-size: 12px;
+       	width: 13px;
+       	height: 40px;
+       	line-height: 25px;
+       	padding-left: 10px;
+       }
+       aside li:nth-of-type(3) span{
+       	display: block;
+       	border-radius: 50%;
+       	font-size: 11px;
+       	width: 19px;
+       	height: 19px;
+       	background: #c40000;
+       	text-align: center;
+       	line-height: 19px;
+       	margin-top: 40px;
+       	margin-left: 7px;
+       }
+       aside li:nth-of-type(5){
+       	cursor: default;
+       }
+       aside li:nth-of-type(6) svg{
+       	font-size: 28px;
+       }
+       
+       /*鼠标经过侧边栏图标时显示*/
+      /*.aside-tip{
+      	position: absolute;
+      	right: 35px;
+      	top: 0px;
+      	
+      }*/
+      .aside-tip li{
+      	display: none;
+      	
+      }
+      .aside-tip .tip{
+      	font-size: 12px;
+      	color:#dddddd;
+      	background: #434343;
+      	width: 117px;
+      	height: 38px;
+      	line-height: 38px;
+      	text-align: center;
+      	z-index: 999;
+      }
+      .aside-tip .erweima{
+      	width: 150px;
+      	height: 150px;
+      	background: #ffffff;
+      	text-align: center;
+      	padding-top: 25px;
+      	color: #787878;
+      }
+      .aside-tip .erweima img{
+      	padding-bottom: 17px;      
+      	}
+      .aside-tip li:nth-of-type(1){
+      	position: fixed;
+      	right: 35px;
+      	top: 62px;
+      }
+      .aside-tip li:nth-of-type(2){
+      	position: fixed;
+      	right: 35px;
+      	top: 110px;
+      }
+      .aside-tip li:nth-of-type(3){
+      	position: fixed;
+      	right: 35px;
+      	top: 446px;
+      }
+      .aside-tip li:nth-of-type(4){
+      	position: fixed;
+      	right: 35px;
+      	top: 384px;
+      	font-size: 11px;
+      }
+  
+      .aside-tip li:nth-of-type(5){
+      	position: fixed;
+      	right: 35px;
+      	top: 544px;
+      }
+      aside .sanjiao{
+      	border-left: 14px solid #434343 ;
+      	border-top: 7px solid transparent;
+      	border-bottom: 7px solid transparent;
+      	position: fixed;
+      	right: 100px;
+      	top: 0px;
+      	z-index: 99;
+      	display: block;
+      	width: 0px;
+      	height: 0px;
+      }
+      /*鼠标点击侧边栏图标时显示*/
+      .click input-placeholder{
+      	color: red;
+      }
+      
+       /*未登录时 点击侧边栏我的资料,出现的块*/
+      /*点击我的资料图标*/
+       .click .mymessage{
+       	width: 295px;
+       	height: 340px;
+       	background: #ffffff;
+       	padding-top: 45px;
+       	box-shadow:0 0 5px rgba(0,0,0,0.4);
+       	/*border: 1px solid salmon;*/
+       	padding-left: 50px;
+       	position: fixed;
+       	top: 62px;
+       	right: 35px;
+       	display: none;
+       }
+       .click .mymessage>p{
+       	font-size: 12px;
+       	color: #333333;
+       	margin-bottom: 15px;
+       }
+       #account,#password{
+       	width: 212px;
+       	height: 34px;
+       	border: 1px solid #e9e9e9;
+       	font-size: 11px;
+       	padding-left: 26px;
+       	margin-bottom: 13px;
+       }
+       .click .button-login{
+       	width: 242px;
+       	height: 44px;
+       	background: #f54f4f;
+       	border: none;
+       	font-size: 12px;
+       	color: #ffffff;
+       	cursor: pointer;
+       }
+       .click .svgacc svg{
+       	font-size: 17px;
+       	position: relative;
+       	left: -238px;
+       	bottom: -1px;
+       	color: #b6b6b6;
+       }
+       .click .svgpw svg{
+       	font-size: 13px;
+       	position: relative;
+       	left: -238px;
+       	bottom: -1px;
+       	color: #b5b5b5;
+       }
+       
+       .click  form p{
+       	height: 17px;
+       	width: 247px;
+       	text-align: right;
+       	padding-top: 24px;
+       	padding-bottom: 13px;
+       	/*line-height: 13px;*/
+       }
+       .click a{
+       	font-size: 12px;
+       	color: #6d6d6d;
+       	text-decoration: none;
+       	cursor: pointer;
+       }
+       .click hr{
+       	width: 240px;
+       	background-color: #e5e5e5;
+       	height: 1px;
+       	border: none;
+       	margin-bottom: 10px;
+       }
+       .click span{
+       	font-size: 11px;
+position: relative;
+       }
+       .click .svgweixin svg{
+       	font-size: 20px;
+       	cursor: pointer;
+       	position: absolute;
+       	/*display: none;*/
+       }
+       .click .svgweixin svg:nth-of-type(2){
+       	display: none;
+       }
+       #accounttip1{
+       position: absolute;
+       	right: 0px;
+       	top: 85px;
+       }
+       #passwordtip1{
+       	position: absolute;
+       	right: 0px;
+       	top: 135px;
+       }
+       
+       /*点击我的收藏图标*/
+      .click .mycollect{
+       	width: 295px;
+       	height: 340px;
+       	background: #ffffff;
+       	padding-top: 45px;
+       	box-shadow:0 0 5px rgba(0,0,0,0.4);
+       	/*border: 1px solid salmon;*/
+       	padding-left: 50px;
+       	position: fixed;
+       	top: 110px;
+       	right: 35px;
+       	display: none;
+       }
+       .click .mycollect>p{
+       	font-size: 12px;
+       	color: #333333;
+       	margin-bottom: 15px;
+       }
+       #accounttip2{
+       position: absolute;
+       	right: 0px;
+       	top: 85px;
+       }
+       #passwordtip2{
+       	position: absolute;
+       	right: 0px;
+       	top: 135px;
+       }
+       
+       /*点击购物车图标*/
+      .click .myshopcar{
+      	position: fixed;
+      	right: 0;
+      	top: 0;
+      	height: 100%;
+      	width: 279px;
+      	background: #e6e6e6;
+      	font-size: 12px;
+      	display: none;
+      }
+      .click .myshopcar .head{
+      	height: 38px;
+      	background: #303030;
+      	color: #dddddd;
+      	line-height: 38px;
+      	position: relative;
+      }
+      .click .left{
+
+      	margin-left: 10px;
+      	position: absolute;
+      	/*border: 1px solid salmon;*/
+      	height: 33px;
+      	width: 23px;
+      	top: 1px;
+      	padding-left: 5px;
+      	cursor: pointer;
+      }
+      .click .middle{
+      	text-align: center;
+      	margin-left: auto;
+      	margin-right: auto;
+      	width: 75px;
+      }
+      .click .myshopcar .content{
+      	/*background: url(../img/kongshopcar.PNG) no-repeat;*/
+      	position: relative;
+      	top: 180px;
+      	
+      	text-align: center;
+      	/*margin-top: auto;
+      	margin-bottom: auto;*/
+      }
+      .click .myshopcar .foot{
+      	position:  fixed;
+      	bottom: 0px;
+      	/*padding-left: 10px;*/
+      	width: 279px;
+      	background: #ffffff;
+      	/*line-height: 12px;*/
+      	text-align: center;
+      	
+      	
+      }
+      .click .myshopcar .foot>p{
+      	position: relative;
+      	width: 279px;
+      	padding-top: 20px;
+      	color: #7c7c7c;
+      	
+      }
+      .click .myshopcar .red{
+      	color: #e43a3d;
+      }
+      .click .myshopcar .othleft{
+      	position: absolute;
+      	left: 20px;
+      }
+      .click .myshopcar .right{
+      	right: 20px;
+      	position: absolute;
+      	
+      }
+      .click .myshopcar input{
+      	margin-top: 25px;
+      	width: 250px;
+      	height: 44px;
+      	color: #ffffff;
+      	background: #e43a3d;
+      	border: none;
+      	border-radius: 2%;
+      	cursor: pointer;
+      }
